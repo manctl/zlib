@@ -180,6 +180,8 @@ endif()
 # Example binaries
 #============================================================================
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+
 add_executable(example test/example.c)
 target_link_libraries(example zlib)
 add_test(example example)
